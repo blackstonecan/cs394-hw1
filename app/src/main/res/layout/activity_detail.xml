@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/lavender">
+
+    <!-- User Detail Header CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/userDetailHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/purple_200"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="User Details"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- User Info Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/userInfoCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/userDetailHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- User Name -->
+            <TextView
+                android:id="@+id/userNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/blue_men" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/userEmailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/blue_men" />
+
+            <!-- Gender -->
+            <TextView
+                android:id="@+id/userGenderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: "
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/blue_men" />
+
+            <!-- IP Address -->
+            <TextView
+                android:id="@+id/userIpAddressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IP Address: "
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/blue_men" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
